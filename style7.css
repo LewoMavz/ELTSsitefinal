@@ -1,0 +1,107 @@
+@font-face
+{
+    font-family: 'Simpson';
+    src: url('simpsonfont/SimpsonfontDEMO.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body 
+{
+    cursor: none;
+    font-family: 'Simpson';
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+section
+{
+    font-family: 'Simpson';
+    margin-top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url(fonds/fond11.jpg);
+    background-size: cover;
+}
+#menu
+{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+
+#menu ul
+{
+    z-index: 5;
+    font-family: 'Simpson';
+    list-style: none;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-left: 0px;
+    position: fixed;
+}
+
+#fond
+{
+    display: block;
+}
+
+#fond img
+{
+    z-index: 4;
+    position: absolute;
+    top: 0px;
+    height: 3000px;
+    width: 3000px;
+}
+
+#text
+{
+    display: none;
+}
+
+#text ul
+{
+    list-style: none;
+    font-family: 'Simpson';
+    z-index: 4;
+    position: absolute;
+    font-size: 200px;
+    left: 10%;
+    top: 10%;
+}
+
+.focus
+{
+    top: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#bitmoji
+{
+    position: relative;
+    top: 85%;
+    left: 60%;
+}
+
+#bitmoji :nth-child(1)
+{
+    z-index: 1;
+    width: 8%;
+    height: 8%;
+}
+
+#bitmoji :nth-child(2)
+{
+    position: relative;
+    z-index: 3;
+    left: -8%;
+    width: 8%;
+    height: 8%;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+     <html>
+     <head>
+         <title>OU SOMMES NOUS ?</title>
+        <link rel="stylesheet" type="text/css" href="style3.css"/>
+                <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+     </head>
+     <body>
+        <section>
+            <div id="bitmoji">
+                <img id="bitmoji1" src="sarah/bitmoji13.png">
+                <img id ="bitmoji2" src="elea/bitmoji_vide.png"> 
+            </div>
+            <div class="focus" style="z-index: 2;">
+            </div>
+        </section>
+        <div id="text"><ul><li><a style="text-decoration:none" href="page4.html">CONTINUER</a></li></ul></div>
+        <div id="fond"><img src="fonds/fondnoir.png"></div>
+        <div id="menu" style="text-decoration:none; z-index: 5;">
+        <ul>
+            <li><a href="accueil.html">ACCUEIL</a></li>   
+            <li><a href="page2.html">PAGE 2</a></li>
+            <li><a href="ensavoirplus.html">EN SAVOIR PLUS...</a></li>
+            <li><a href="pagefinale.html">ARRETER LE JEU</a></li>
+        </ul>
+        </div>
+        <script type="text/javascript">
+        $(document).mousemove(function(e){
+            var X = e.pageX;
+            var Y = e.pageY;
+            $('.focus').css('background','radial-gradient(circle at '+X+'px '+Y+'px, transparent, #000 150px)')
+            $("#fond").css({
+                'display': 'none'
+            })
+            });
+        $("#bitmoji :nth-child(2)").click('.focus',function ()
+        {
+            $('.focus').hide();
+            $("#text").css({
+                'display': 'block'
+        });
+        });
+
+        </script>
+
+        <style type="text/css">
+            a
+            { 
+                text-decoration:none;   color: #FFD700; 
+                text-shadow: #000000 6px 6px, #000000 -6px 6px, #000000 -6px -6px, #000000 6px -6px;
+            } 
+            a:hover
+            {
+                text-decoration:none;   color: #000000; 
+                text-shadow: #FFD700 6px 6px, #FFD700 -6px 6px, #FFD700 -6px -6px, #FFD700 6px -6px;
+            }
+
+            a
+            { 
+                text-decoration:none;   color: #FFD700; 
+                text-shadow: #000000 3px 3px, #000000 -3px 3px, #000000 -3px -3px, #000000 3px -3px;
+            } 
+            a:hover
+            {
+                text-decoration:none;   color: #000000; 
+                text-shadow: #FFD700 3px 3px, #FFD700 -3px 3px, #FFD700 -3px -3px, #FFD700 3px -3px;
+            }
+        </style>
+
+
+     </body>
+     </html>

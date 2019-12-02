@@ -1,0 +1,82 @@
+@font-face
+{
+    font-family: 'Simpson';
+    src: url('simpsonfont/SimpsonfontDEMO.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	overflow-y: hidden;
+    overflow-x: hidden;
+    background: url(img/thesimpsons.jpg);
+    width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-attachment:fixed;
+}
+
+.texte{
+	z-index: 1;
+	position: relative;
+	text-align: center;
+	margin-right: 52%;
+	margin-top: 15%;
+	font-family: 'Chewy', cursive;
+	text-shadow: 2px 2px orange;
+	font-size: 25px;
+}
+
+#OSN{
+	animation-delay: 2s;
+	text-decoration: underline black;
+	font-size: 40px;
+}
+
+a{
+	list-style: none;
+	position: relative;
+	font-family: 'Simpson'; 
+	font-size: 30px;	
+	text-decoration:none;   
+	color: #FFD700; 
+    text-shadow: #000000 3px 3px;
+    left: 30px;
+    top: 20px;
+}
+
+a:hover{
+	text-decoration: underline;  
+	color: #000000; 
+    text-shadow: #FFD700 3px 3px;
+}
+
+#P9{
+	animation-delay: 3s;
+}
+#P7{
+	animation-delay: 1s;
+}
+#P1{
+	animation-delay: 2s;
+}
+#P5{
+	animation-delay: 1.5s;
+}
+#P3{
+	animation-delay: 2.5s;
+}
+#P2{
+	animation-delay: 3s;
+}
+#P4{
+	animation-delay: 1s;
+}
+#P6{
+	animation-delay: 2.5s;
+}
+#P8{
+	animation-delay: 2s;
+}
